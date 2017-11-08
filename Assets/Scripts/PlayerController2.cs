@@ -1,16 +1,26 @@
 ﻿using UnityEngine;
 using System.Collections;
+using AssemblyCSharp;
 
-public class PlayerController2 : MonoBehaviour
+public class PlayerController2 : MonoBehaviour, PowerUpController
 {
 
 	public float speed;
+	public Main main;
+	public KeyCode left, up, right, down;
 
 	private Rigidbody rb;
+	public float powerUpSpeed = 0;
 
 	void Start()
 	{
 		rb = GetComponent<Rigidbody>();
+		powerUpSpeed = speed;
+		main = new Main ();
+		left = KeyCode.LeftArrow;
+		right = KeyCode.RightArrow;
+		up = KeyCode.UpArrow;
+		down = KeyCode.DownArrow;
 	}
 
 	void FixedUpdate()
@@ -18,22 +28,22 @@ public class PlayerController2 : MonoBehaviour
 		//float moveHorizontal = Input.GetAxis("Horizontal");
 		//float moveVertical = Input.GetAxis("Vertical");
 
-		if (Input.GetKey(KeyCode.UpArrow))
+		if (Input.GetKey(up))
 		{
 			rb.AddForce(Vector3.forward * speed);
 		}
 
-		if (Input.GetKey(KeyCode.LeftArrow))
+		if (Input.GetKey(left))
 		{
 			rb.AddForce(Vector3.left * speed);
 		}
 
-		if (Input.GetKey(KeyCode.DownArrow))
+		if (Input.GetKey(down))
 		{
 			rb.AddForce(Vector3.back * speed);
 		}
 
-		if (Input.GetKey(KeyCode.RightArrow))
+		if (Input.GetKey(right))
 		{
 			rb.AddForce(Vector3.right * speed);
 		}
@@ -41,6 +51,41 @@ public class PlayerController2 : MonoBehaviour
 
 		//Vector3 movement = new Vector3(moveHorizontal, 0.0f, moveVertical);
 		//rb.AddForce(movement * speed);
+	}
 
+	void OnTriggerEnter(Collider other) 
+	{
+		if (other.gameObject.CompareTag ("Pick Up"))
+		{
+			other.gameObject.SetActive (false);
+			main.selectRandomPowerUp (this);
+		}
+	}
+
+	public void SpeedUp()
+	{
+		powerUpSpeed = powerUpSpeed * (float) 1.5;
+	}
+
+	public void SlowDown()
+	{
+		powerUpSpeed = powerUpSpeed * (float) 0.5;
+	}
+
+	public void resetSpeed()
+	{
+		powerUpSpeed = speed;
+	}
+
+	public void Inverse()
+	{
+		left = KeyCode.RightArrow;
+		right = KeyCode.LeftArrow;
+	}
+
+	public void resetInverse()
+	{
+		right = KeyCode.RightArrow;
+		left = KeyCode.LeftArrow;
 	}
 }

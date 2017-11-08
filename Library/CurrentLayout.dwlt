@@ -45,7 +45,7 @@ MonoBehaviour:
   m_MinSize: {x: 202, y: 442}
   m_MaxSize: {x: 4002, y: 8042}
   vertical: 1
-  controlID: 52
+  controlID: 27
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -91,8 +91,8 @@ MonoBehaviour:
     y: 0
     width: 244
     height: 620
-  m_MinSize: {x: 234, y: 471}
-  m_MaxSize: {x: 10004, y: 14021}
+  m_MinSize: {x: 234, y: 492}
+  m_MaxSize: {x: 10004, y: 14042}
   vertical: 1
   controlID: 98
 --- !u!114 &5
@@ -138,8 +138,8 @@ MonoBehaviour:
     y: 0
     width: 244
     height: 291
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 204, y: 221}
+  m_MaxSize: {x: 4004, y: 4021}
   m_ActualView: {fileID: 17}
   m_Panes:
   - {fileID: 17}
@@ -165,10 +165,10 @@ MonoBehaviour:
     y: 30
     width: 1350
     height: 620
-  m_MinSize: {x: 713, y: 471}
-  m_MaxSize: {x: 18008, y: 14021}
+  m_MinSize: {x: 713, y: 492}
+  m_MaxSize: {x: 18008, y: 14042}
   vertical: 0
-  controlID: 96
+  controlID: 25
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -278,10 +278,10 @@ MonoBehaviour:
     y: 0
     width: 1073
     height: 620
-  m_MinSize: {x: 436, y: 471}
-  m_MaxSize: {x: 14006, y: 14021}
+  m_MinSize: {x: 436, y: 492}
+  m_MaxSize: {x: 14006, y: 14042}
   vertical: 0
-  controlID: 97
+  controlID: 26
 --- !u!114 &13
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -308,7 +308,7 @@ MonoBehaviour:
   - {fileID: 20}
   - {fileID: 14}
   m_Selected: 0
-  m_LastSelected: 0
+  m_LastSelected: 1
 --- !u!114 &14
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -331,10 +331,10 @@ MonoBehaviour:
   m_DepthBufferBits: 0
   m_Pos:
     serializedVersion: 2
-    x: 0
-    y: 91
-    width: 837
-    height: 278
+    x: 8
+    y: 99
+    width: 827
+    height: 270
 --- !u!114 &15
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -376,16 +376,15 @@ MonoBehaviour:
     - Assets/Scripts
   m_ViewMode: 0
   m_StartGridSize: 64
-  m_LastFolders:
-  - Assets
+  m_LastFolders: []
   m_LastFoldersGridSize: -1
-  m_LastProjectPath: C:\Users\Hakam\Desktop\Roll a Ball
+  m_LastProjectPath: C:\Users\Hakam\Documents\GitHub\Ballsy2
   m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: e01b0000
     m_LastClickedID: 7136
-    m_ExpandedIDs: 00000000322700007a270000
+    m_ExpandedIDs: 00000000322700007a27000096270000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -413,18 +412,18 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000322700007a27000096270000
+    m_ExpandedIDs: 00000000322700007a270000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: Rotator
-      m_OriginalName: Rotator
+      m_Name: Main
+      m_OriginalName: Main
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 1608
+      m_UserData: 11568
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
       m_OriginalEventType: 0
@@ -494,7 +493,7 @@ MonoBehaviour:
     y: 99
     width: 275
     height: 599
-  m_ScrollPosition: {x: 0, y: 0}
+  m_ScrollPosition: {x: 0, y: 150.95508}
   m_InspectorMode: 0
   m_PreviewResizer:
     m_CachedPref: 160
@@ -529,9 +528,9 @@ MonoBehaviour:
     height: 270
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 48060000
-    m_LastClickedID: 0
-    m_ExpandedIDs: 8efbffff00000000d0270000
+    m_SelectedIDs: ca270000
+    m_LastClickedID: 10186
+    m_ExpandedIDs: 9afbffff00000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -581,14 +580,14 @@ MonoBehaviour:
     width: 827
     height: 270
   m_SceneLighting: 1
-  lastFramingTime: 884.1410616592606
+  lastFramingTime: 409.986703699303
   m_2DMode: 0
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 0.036115684, y: -0.4177642, z: -3.3508077}
+    m_Target: {x: -1.1262484, y: 0, z: -1.0961249}
     speed: 2
-    m_Value: {x: 0.036115684, y: -0.4177642, z: -3.3508077}
+    m_Value: {x: -1.1262484, y: 0, z: -1.0961249}
   m_RenderMode: 0
   m_ValidateTrueMetals: 0
   m_SceneViewState:
@@ -611,13 +610,13 @@ MonoBehaviour:
       speed: 2
       m_Value: 0
   m_Rotation:
-    m_Target: {x: -0.21510977, y: 0.093016304, z: -0.020586675, w: -0.9719321}
+    m_Target: {x: -0.21510977, y: 0.09301631, z: -0.020586675, w: -0.9719321}
     speed: 2
-    m_Value: {x: -0.21510977, y: 0.093016304, z: -0.020586675, w: -0.9719321}
+    m_Value: {x: -0.21510977, y: 0.09301631, z: -0.020586675, w: -0.9719321}
   m_Size:
-    m_Target: 8.246399
+    m_Target: 7.125374
     speed: 2
-    m_Value: 8.246399
+    m_Value: 7.125374
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -727,7 +726,7 @@ MonoBehaviour:
   m_DepthBufferBits: 0
   m_Pos:
     serializedVersion: 2
-    x: 0
-    y: 91
-    width: 837
-    height: 278
+    x: 8
+    y: 99
+    width: 827
+    height: 270
